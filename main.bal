@@ -36,11 +36,11 @@ type Data record {|
 
 service / on httpListener {
 
-    resource function get path() returns string {
+    resource function get show() returns string {
         return "hello";
     }
 
-    resource function post recipes(http:Request request) returns http:Response|http:InternalServerError|error {
+    resource function post store(http:Request request) returns http:Response|http:InternalServerError|error {
         var multipartData = request.getBodyParts();
 
         if (multipartData is http:ClientError) {
