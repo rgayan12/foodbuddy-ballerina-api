@@ -1,0 +1,8 @@
+version: 0.1
+
+endpoints:
+  - name: "Ballerina REST API"
+    port: 8080
+    type: REST
+    networkVisibility: Public
+    context: /
