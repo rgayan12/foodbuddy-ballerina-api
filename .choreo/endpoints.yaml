@@ -4,5 +4,5 @@ endpoints:
   - name: "Ballerina REST API"
     port: 8080
     type: REST
-    networkVisibility: Public
+    networkVisibility: Organization
     context: /recipes
